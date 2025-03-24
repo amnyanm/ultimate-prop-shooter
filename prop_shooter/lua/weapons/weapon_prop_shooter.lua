@@ -195,7 +195,6 @@ function SWEP:PrimaryAttack()
         phys:SetVelocity(velocity)
     end
 
-    -- 🔥 Эффекты пропа 🔥 --
     if math.random(1, 100) <= GetConVar("prop_shooter_fire"):GetInt() then
         prop:Ignite(5)
     end
